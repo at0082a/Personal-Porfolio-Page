@@ -13,7 +13,7 @@ class Contacts extends Component {
             />
           </Cell>
           <Cell col={6}>
-            <h2>Contact Information</h2>
+            <h2>Contact Infom</h2>
             <hr/>
             <div className='contact-info'>
               <List>
@@ -28,9 +28,6 @@ class Contacts extends Component {
                     <i className="fa fa-envelope" aria-hidden="true"/>
                     alex.tilatti@gmail.com
                   </ListItemContent>
-                </ListItem>
-                <ListItem>
-                  <ListItemContent className='contact-content' icon="person">Bob Odenkirk</ListItemContent>
                 </ListItem>
               </List>
             </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import HomePage from './homePage.js'
 import Projects from './projects.js'
 import Contacts from './contact.js'
-import Resume from './aboutMe.js'
 import { Route, Switch } from "react-router"
 
 const Main = () => (
@@ -10,7 +9,6 @@ const Main = () => (
       <Route exact path="/" component={HomePage} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/contact" component={Contacts} />
-      <Route exact path="/about-me" component={Resume} />
     </Switch> 
 );
 

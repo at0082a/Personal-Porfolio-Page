@@ -88,7 +88,7 @@
 .contact-grid hr {
   border-top: 5px dotted black;
   margin: auto;
-  width: 50%
+  width: 75%
 }
 
 .contact-content {
@@ -102,4 +102,14 @@
 
 .cardBack {
   padding-bottom: 60px
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-icon {
+  color: white;
+  margin: 6px;
 }

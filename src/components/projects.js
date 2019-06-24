@@ -67,17 +67,18 @@ class Projects extends Component {
                       "url(https://www.techaroha.com/wp-content/uploads/2018/06/BEEVA-nodejs-1200x565.jpg) center / cover"
                   }}
                 >
-                  FoodNow
+                  Pizza Uto
                 </CardTitle>
                 <CardText>
-                  Food Now is an web application for a singular restaurant wher
-                  a user can order for pick-up. The app stores the user choices
-                  on its cart using local storage. Guaranteeing the item will
-                  stay on cart even if the browser is closed.
+                A web application for a single restaurant where a user can order food 
+                for pick-up. Users can view the menu, select items to order and proceed to a check out page. Users are 
+                notified of their order using Twilio via text message.
+
+
                 </CardText>
                 <CardActions border>
                   <Button
-                    href="https://github.com/adrianaj24/foodnow"
+                    href="https://github.com/at0082a/midterm-project-6"
                     target="_blank"
                     colored
                   >
