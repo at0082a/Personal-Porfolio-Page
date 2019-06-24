@@ -13,6 +13,7 @@
     "react-scripts": "3.0.1",
     "typeface-roboto": "0.0.54"
   },
+  "homepage" : "https://at0082a.github.io/Personal-Porfolio-Page/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
