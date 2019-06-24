@@ -1,82 +1,211 @@
-import React, {Component} from 'react'
-import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton, Header} from 'react-mdl';
+import React, { Component } from "react";
+import {Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu } from "react-mdl";
 
 class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeTab: 0 };
-  }
-
-  toggleCategories() {
-    if(this.state.activeTab === 0) {
-      return (
-        <>
-        <Card shadow={5} style={{minWidth: '450',  margin: 'auto', display: 'inline-block' }}>
-          <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.pexels.com/photos/733475/pexels-photo-733475.jpeg?cs=srgb&dl=astronomy-cosmos-dark-733475.jpg&fm=jpg) center / cover'}}>
-            Chatty App
-          </CardTitle>
-            <CardText>
-              ChattyApp is a client-side single-page application that allows multiple users to chat with each other. Users are able to set their username and chat in real-time through the Websocket server.
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-            </CardActions>
-        </Card>
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto', display: 'inline-block', marginleft: '1em' }}>
-          <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://jayshetty.me/wp-content/uploads/2019/02/backlit-chiemsee-dawn-1363876.jpg) center / cover'}}>
-            Tiny App
-          </CardTitle>
-          <CardText>
-            Tiny App is a full stack web application built with Node and Express that allows users to shorten long URLS (a la bit.ly)
-          </CardText>
-          <CardActions border>
-            <Button colored>GitHub</Button>
-          </CardActions>
-        </Card>
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto' }}>
-          <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.pixelstalk.net/wp-content/uploads/2016/12/1920x1080-City-At-Night-Hi-Res-620x349.jpg) center / cover'}}>
-            Tweeter
-          </CardTitle>
-          <CardText>
-            Tweeter is a simple, single-page Twitter clone using jQuery, HTML, and Javascript to dynamically allow users to view and post tweets. Dependencies include Node and Express.
-          </CardText>
-          <CardActions border>
-            <Button colored>GitHub</Button>
-          </CardActions>
-        </Card>
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto' }}>
-          <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://erikhare.files.wordpress.com/2017/06/forest.jpg?w=1200) center / cover'}}>
-            Pizza Uto
-          </CardTitle>
-          <CardText>
-            Pizza Uto is a web application for a single restaurant wher a user can order food for pick-up. Users can view the menu and select a pizza or beverage with an option to select a size of small, medium or large. The user can view all items in a cart and proceed to a check out page where they will be given details via Twilio SMS when their order is complete. 
-          </CardText>
-          <CardActions border>
-            <Button colored>GitHub</Button>
-          </CardActions>
-        </Card>
-        </>
-      )
-    }  
-  }
-  render () {
+  render() {
     return (
-      <div className='category-tabs'>
-        {/* <Tabs activeTab={this.state.activeTab} onChange={(tabID) => this.setState({activeTab: tabID})} ripple >
-          <Tab>React</Tab>
-          <Tab>Node, Express</Tab>
-          <Tab>MongoDB</Tab>
-          <Tab>Full Stack</Tab>
-        </Tabs> */}
-        <section className='projects-grid'>
-          <Grid className='projects-grid'>
-            <Cell col={12}></Cell>
+      <div>
+        <div className="content">
+          <div className="content-grid" />
+          <Grid className="projects-grid">
+            <Cell col={3}>
+              <Card
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "450",
+                  margin: "auto",
+                  height: "400px"
+                }}
+              >
+                <CardTitle
+                  style={{
+                    display: "flex",
+                    color: "#black",
+                    height: "221px",
+                    background:
+                      "url(https://tryolabs.com/images/blog/social/react.736da783.png) center / cover",
+                    zIndex: 1
+                  }}
+                >
+                  ChattyApp
+                </CardTitle>
+                <CardText>
+                  ChattyApp is a client-side single-page application that allows
+                  multiple users to chat with each other. Users are able to set
+                  their username and chat in real-time through through the
+                  Websocket server.
+                </CardText>
+                <CardActions border>
+                  <Button
+                    href="https://github.com/at0082a/Chatty-App"
+                    target="_blank"
+                    colored
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+                <CardMenu style={{ color: "#fff" }} />
+              </Card>
+            </Cell>
+            <Cell col={3}>
+              <Card
+                shadow={5}
+                style={{
+                  display: "flex",
+                  width: "450",
+                  margin: "auto",
+                  height: "400px"
+                }}
+              >
+                <CardTitle
+                  style={{
+                    display: "flex",
+                    color: "black",
+                    height: "221px",
+                    background:
+                      "url(https://www.techaroha.com/wp-content/uploads/2018/06/BEEVA-nodejs-1200x565.jpg) center / cover"
+                  }}
+                >
+                  FoodNow
+                </CardTitle>
+                <CardText>
+                  Food Now is an web application for a singular restaurant wher
+                  a user can order for pick-up. The app stores the user choices
+                  on its cart using local storage. Guaranteeing the item will
+                  stay on cart even if the browser is closed.
+                </CardText>
+                <CardActions border>
+                  <Button
+                    href="https://github.com/adrianaj24/foodnow"
+                    target="_blank"
+                    colored
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+                <CardMenu style={{ color: "#fff" }} />
+              </Card>
+            </Cell>
+            <Cell col={3}>
+              <Card
+                shadow={5}
+                style={{
+                  display: "flex",
+                  minWidth: "450",
+                  margin: "auto",
+                  height: "400px"
+                }}
+              >
+                <CardTitle
+                  style={{
+                    display: "flex",
+                    color: "black",
+                    height: "220px",
+                    background:
+                      "url(https://www.techaroha.com/wp-content/uploads/2018/06/BEEVA-nodejs-1200x565.jpg) center / cover"
+                  }}
+                >
+                  TinyApp
+                </CardTitle>
+                <CardText>
+                  TinyApp is a full stack web application built with Node and
+                  Express that allows users to shorten long URLs (à la bit.ly). Users can register, login, and create new tiny URL's. 
+                  A user can view their saved URLs when logged in.
+                </CardText>
+                <CardActions border>
+                  <Button
+                    href="https://github.com/at0082a/tiny-app"
+                    target="_blank"
+                    colored
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+                <CardMenu style={{ color: "#fff" }} />
+              </Card>
+            </Cell>
+            <Cell col={3}>
+              <Card
+                shadow={5}
+                style={{
+                  display: "flex",
+                  minWidth: "450",
+                  margin: "auto",
+                  height: "400px"
+                }}
+              >
+                <CardTitle
+                  style={{
+                    display: "flex",
+                    color: "black",
+                    height: "230px",
+                    background:
+                      "url(https://www.cherwell.com/-/media/cherwell/images/tap-logos/asset_logo_amazon-web-service.png) center / cover"
+                  }}
+                >
+                  Haven
+                </CardTitle>
+                <CardText>
+                  Haven is an open source Smart Home app built to automate and
+                  control common household processes. The first feature
+                  implementation of the app is a camera video feed. The camera
+                  can be placed anywhere in your home. Video feeds are stored in AWS
+                </CardText>
+                <CardActions border>
+                  <Button
+                    href="https://github.com/adrianaj24/home-assistant"
+                    target="_blank"
+                    colored
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+                <CardMenu style={{ color: "#fff" }} />
+              </Card>
+            </Cell>
+            <Cell col={3}>
+              <Card
+                shadow={5}
+                style={{
+                  display: "flex",
+                  minWidth: "450",
+                  margin: "auto",
+                  height: "400px"
+                }}
+              >
+                <CardTitle
+                  style={{
+                    display: "flex",
+                    color: "black",
+                    height: "250px",
+                    background:
+                      "url(https://xebialabs.com/wp-content/uploads/files/tool-chest/mongodb.jpg) center / cover"
+                  }}
+                >
+                  Tweeter
+                </CardTitle>
+                <CardText>
+                  Single-page Twitter clone powered by AJAX that helped refine
+                  front-end development skills and leverage the asynchronous
+                  power of JavaScript
+                </CardText>
+                <CardActions border>
+                  <Button
+                    href="https://github.com/adrianaj24/tweeter"
+                    target="_blank"
+                    colored
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+                <CardMenu style={{ color: "#fff" }} />
+              </Card>
+            </Cell>
           </Grid>
-          {this.toggleCategories()}
-        </section>
+        </div>
       </div>
-    )
+    );
   }
 }
-
-export default Projects
+export default Projects;

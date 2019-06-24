@@ -13,7 +13,7 @@ class Contacts extends Component {
             />
           </Cell>
           <Cell col={6}>
-            <h2>Contact Me</h2>
+            <h2>Contact Information</h2>
             <hr/>
             <div className='contact-info'>
               <List>
