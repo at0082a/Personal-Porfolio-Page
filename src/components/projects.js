@@ -73,8 +73,6 @@ class Projects extends Component {
                 A web application for a single restaurant where a user can order food 
                 for pick-up. Users can view the menu, select items to order and proceed to a check out page. Users are 
                 notified of their order using Twilio via text message.
-
-
                 </CardText>
                 <CardActions border>
                   <Button
@@ -151,11 +149,11 @@ class Projects extends Component {
                   Haven is an open source Smart Home app built to automate and
                   control common household processes. The first feature
                   implementation of the app is a camera video feed. The camera
-                  can be placed anywhere in your home. Video feeds are stored in AWS
+                  can be placed anywhere in your home. Video feeds are stored in AWS S3 storage
                 </CardText>
                 <CardActions border>
                   <Button
-                    href="https://github.com/adrianaj24/home-assistant"
+                    href="https://github.com/at0082a/home-assistant-1"
                     target="_blank"
                     colored
                   >
@@ -181,19 +179,19 @@ class Projects extends Component {
                     color: "black",
                     height: "250px",
                     background:
-                      "url(https://xebialabs.com/wp-content/uploads/files/tool-chest/mongodb.jpg) center / cover"
+                      "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxLu5QVLm5cykSKttOV9ZtP04_oV3pPMmf_fDfKfm3F8Zn7z4v) center / cover"
                   }}
                 >
                   Tweeter
                 </CardTitle>
                 <CardText>
-                  Single-page Twitter clone powered by AJAX that helped refine
+                  Single-page Twitter clone powered by AJAX that helps refine
                   front-end development skills and leverage the asynchronous
-                  power of JavaScript
+                  power of JavaScript. Tweets are stored using MongoDB on the backend.
                 </CardText>
                 <CardActions border>
                   <Button
-                    href="https://github.com/adrianaj24/tweeter"
+                    href="https://github.com/at0082a/tweeter"
                     target="_blank"
                     colored
                   >
