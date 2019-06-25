@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import {Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu } from "react-mdl";
 
+//add a new card per project page
+
 class Projects extends Component {
   render() {
     return (
