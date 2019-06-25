@@ -6,8 +6,7 @@ import {Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu } f
 class Projects extends Component {
   render() {
     return (
-      <div>
-        <div className="content">
+        <div className="projects-content">
           <div className="content-grid" />
           <Grid className="projects-grid">
             <Cell col={3}>
@@ -207,7 +206,6 @@ class Projects extends Component {
             </Cell>
           </Grid>
         </div>
-      </div>
     );
   }
 }

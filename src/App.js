@@ -24,8 +24,8 @@ class App extends Component {
             </Navigation>
         </Drawer> */}
         <Content>
-            <div className="page-content" />
-            <div className='home-container'>
+            {/* <div className="page-content" /> */}
+     <div className='home-container'>
         <Grid className='landing-grid'>
           <Cell col={12}>
             <img

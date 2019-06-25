@@ -65,6 +65,10 @@
   padding-top: 2em
 }
 
+.projects-content {
+  background: white;
+}
+
 .contact-grid {
   text-align: center;
   justify-content: center;
