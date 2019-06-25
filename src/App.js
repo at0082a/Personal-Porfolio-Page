@@ -25,7 +25,7 @@ class App extends Component {
         </Drawer> */}
         <Content>
             <div className="page-content" />
-            <Main/>
+            <p> Hellloooooooo </p>
         </Content>
     </Layout>
 </div>
