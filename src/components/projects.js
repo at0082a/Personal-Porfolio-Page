@@ -7,7 +7,7 @@ class Projects extends Component {
   render() {
     return (
         <div className="projects-content">
-          <div className="content-grid" />
+          <div className="content-grid" >
           <Grid className="projects-grid">
             <Cell col={3}>
               <Card
@@ -31,7 +31,7 @@ class Projects extends Component {
                 >
                   ChattyApp
                 </CardTitle>
-                <CardText>
+                <CardText colored>
                   ChattyApp is a client-side single-page application that allows
                   multiple users to chat with each other. Users are able to set
                   their username and chat in real-time through through the
@@ -205,6 +205,7 @@ class Projects extends Component {
               </Card>
             </Cell>
           </Grid>
+          </div>
         </div>
     );
   }
