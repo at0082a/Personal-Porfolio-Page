@@ -8,6 +8,9 @@ class Projects extends Component {
     return (
         <div className="projects-content">
           <div className="content-grid" >
+            <div className= "projects-title">
+            <h2>Projects</h2>
+            </div>
           <Grid className="projects-grid">
             <Cell col={3}>
               <Card
@@ -16,7 +19,7 @@ class Projects extends Component {
                   display: "flex",
                   width: "450",
                   margin: "auto",
-                  height: "400px"
+                  height: "400px",
                 }}
               >
                 <CardTitle

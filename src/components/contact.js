@@ -6,20 +6,20 @@ class Contacts extends Component {
     return (
       <div className='contact-body'>
         <Grid className='contact-grid'>
-          <Cell col={6}>
+          {/* <Cell col={6}>
             <h2>Alex Tilatti</h2>
             <img className='contact-pic' src="http://streitcouncil.org/uploads/images/Alex%20Tilatti.jpg"
             alt='profile-pic'
             />
-          </Cell>
-          <Cell col={6}>
+          </Cell> */}
+          <Cell col={9}>
             <h2>Contact Information</h2>
-            <hr/>
+            {/* <hr/> */}
             <div className='contact-info'>
               <List>
                 <ListItem>
                   <ListItemContent className='contact-content'>
-                    <i className="fa fa-fax" aria-hidden="true"/>
+                    <i className="fa fa-phone" aria-hidden="true"/>
                     647-382-6761
                   </ListItemContent>
                 </ListItem>
